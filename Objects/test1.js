@@ -35,3 +35,4 @@ const course ={
 
 const {instructor}= course
 console.log(instructor); 
+
