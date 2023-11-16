@@ -10,5 +10,5 @@ const mySym ="myKey1"
  console.log(abc.name);
  abc.name ="Stuti Dutta"
  Object.freeze(abc)
- console.log(abc);
+//  console.log(abc);
  console.log(abc[mySym]);
