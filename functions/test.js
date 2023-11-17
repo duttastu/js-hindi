@@ -23,7 +23,7 @@ function numadd(n1,n2){ // (n1,n2) this is parameter
 // console.log("result:", result);
 
 function loginusermessage(username){
-    if(!username){
+    if(!username ){
         console.log("please enter a username");
         return
     }
@@ -31,4 +31,4 @@ function loginusermessage(username){
 }
 
 // console.log(loginusermessage("stuti"))
-console.log(loginusermessage());
+// console.log(loginusermessage());
