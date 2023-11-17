@@ -32,3 +32,21 @@ function loginusermessage(username){
 
 // console.log(loginusermessage("stuti"))
 // console.log(loginusermessage());
+
+function calculatecartprice(val3,val4,...num){ //in this three dots are rest operator
+    return num
+}
+
+// console.log(calculatecartprice(100,200,3000,8510));
+
+const user1 ={
+    name1:"Stuti",
+    price:144
+
+}
+
+function newObject(anyObject){
+    console.log(`the name of person is ${anyObject.name1} and the price is ${anyObject.price}`);
+}
+
+newObject(user1)
