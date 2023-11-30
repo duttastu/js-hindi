@@ -49,33 +49,33 @@
 //     console.log(error);
 // }).finally(()=> console.log("The promise is either resolved or rejected"))
 
-// const promisefive = new Promise(function(resolve,reject){
-//     setTimeout(function(){
-//         let error = true;
-//         if(!error){
-//             resolve({username:"JAvascript",password:"123"})
-//         }else{
-//             reject('Error:Something went wromg')
-//         }
-//     },1000)
-// })
+const promisefive = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = true;
+        if(!error){
+            resolve({username:"JAvascript",password:"123"})
+        }else{
+            reject('Error:Something went wromg')
+        }
+    },1000)
+})
 
-// async function consumePromiseFive(){
-//     try{
-//     const response=await promisefive
-//     console.log(response);
-// } catch(error){
-//     console.log(error);
-// }}
-// consumePromiseFive()
+async function consumePromiseFive(){
+    try{
+    const response=await promisefive
+    console.log(response);
+} catch(error){
+    console.log(error);
+}}
+consumePromiseFive()
 
-// async function getAuser(){
-//     try{
-//     const response = await fetch('https://randomuser.me/')
-//     const data =await response.json()
-//     console.log(data);
-// } catch(error){
-//     console.log(error);
-// }
-// }
-// getAuser()
+async function getAuser(){
+    try{
+    const response = await fetch('https://github.com/duttastu')
+    const data = response.json()
+    console.log(data);
+} catch(error){
+    console.log(error);
+}
+}
+getAuser()
